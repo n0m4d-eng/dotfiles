@@ -1,0 +1,18 @@
+services:
+  kali-ctf:
+    container_name: kali-ctf
+    image: kali/base_june25:2.0
+    build: .
+    network_mode: host  # Shares host network stack
+    privileged: true
+    security_opt:
+      - seccomp:unconfined
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+      - NET_BIND_SERVICE
+    volumes:
+      - /home/z0mb34r/Desktop/Docker_Share:/host_data  # Your dedicated shared folder
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
