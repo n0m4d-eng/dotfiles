@@ -1,0 +1,11 @@
+{
+  "showInlineTitle": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "Assets",
+  "showUnsupportedFiles": true,
+  "vimMode": true,
+  "readableLineLength": true
+}
