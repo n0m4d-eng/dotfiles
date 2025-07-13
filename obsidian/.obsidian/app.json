@@ -4,8 +4,9 @@
   "newFileLocation": "current",
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "Assets",
+  "attachmentFolderPath": "./assets",
   "showUnsupportedFiles": true,
   "vimMode": true,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "showLineNumber": false
 }

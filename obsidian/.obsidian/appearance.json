@@ -1,10 +1,10 @@
 {
-  "cssTheme": "GitHub Theme",
+  "cssTheme": "Border",
   "showViewHeader": true,
-  "showRibbon": true,
+  "showRibbon": false,
   "nativeMenus": false,
-  "accentColor": "#f29191",
-  "theme": "system",
+  "accentColor": "#f98b8b",
+  "theme": "obsidian",
   "translucency": false,
   "baseFontSize": 17
 }

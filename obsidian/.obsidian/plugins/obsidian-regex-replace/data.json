@@ -3,7 +3,7 @@
   "replaceText": "",
   "useRegEx": true,
   "selOnly": false,
-  "caseInsensitive": false,
+  "caseInsensitive": true,
   "processLineBreak": false,
   "processTab": false,
   "prefillFind": false

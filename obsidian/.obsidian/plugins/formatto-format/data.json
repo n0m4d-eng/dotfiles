@@ -17,6 +17,6 @@
   "otherOptions": {
     "notifyWhenUnchanged": true,
     "showMoreDetailedErrorMessages": false,
-    "formatOnSave": true
+    "formatOnSave": false
   }
 }

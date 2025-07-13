@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "326e12b69844f58e",
+        "id": "81884097d933f894",
         "type": "tabs",
         "children": [
           {
-            "id": "acab6d5bc2fe4a43",
+            "id": "da069024ab7cae3b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/HTB/Poison.md",
+                "file": "Misc Notes/n0m4d-eng/README.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Poison"
+              "title": "README"
             }
           }
         ]
@@ -42,7 +42,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -60,20 +60,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/HTB/Poison.md",
+                "file": "Misc Notes/n0m4d-eng/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Poison"
+              "title": "Outline of README"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 235.5
   },
   "right": {
     "id": "d1d1f0d2152622c2",
@@ -82,7 +82,6 @@
       {
         "id": "f7c8561309c2abdb",
         "type": "tabs",
-        "dimension": 62.16696269982238,
         "children": [
           {
             "id": "91ed376355bc4be6",
@@ -100,92 +99,75 @@
             }
           }
         ]
-      },
-      {
-        "id": "afed793f7777a486",
-        "type": "tabs",
-        "dimension": 37.83303730017762,
-        "children": [
-          {
-            "id": "33b86f4328f9568a",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 355.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "formatto-format:Format Document": true,
-      "mermaid-tools:Open Mermaid Toolbar": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "github-sync:Sync with Remote": false,
       "command-palette:Open command palette": true,
       "workspaces:Manage workspace layouts": true,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "formatto-format:Format Document": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
       "omnisearch:Omnisearch": false,
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "acab6d5bc2fe4a43",
+  "active": "da069024ab7cae3b",
   "lastOpenFiles": [
-    "Writeups/HTB/Poison.md",
-    "Writeups/HTB/Cicada.md",
-    "Writeups/HTB/Netmon.md",
-    "Writeups/HTB/TwoMillion.md",
-    "Assets/User_flag 1.png",
-    "Assets/root_flag 1.png",
-    "Assets/root_rpc.png",
-    "Assets/privesc_exploit_smb.png",
-    "Assets/privesx_exploit.png",
-    "Assets/searchsploit.png",
-    "Assets/dashboard.png",
-    "Writeups/HTB/SolidState.md",
-    "Assets/user_flag.png",
-    "Assets/root_flag.png",
-    "Assets/banner_grab.png",
-    "Concepts/Linux/Common Linux SUID Binaries.md",
+    "Cyber Security/Grimoire/README.md",
+    "Projects/Writeups/Proxmox Homelab.md",
+    "Projects/Writeups/Docker.md",
+    "Cyber Security/Grimoire/Concepts/SUMMARY.md",
+    "Concepts.md",
+    "Concepts",
+    "Projects/Writeups/assets/Pasted image 20250713155320.png",
+    "Projects/Writeups/assets",
+    "Projects/Writeups/README.md",
+    "Projects/Writeups",
+    "Projects/Homelab/Docker.md",
+    "Projects/Project_Writeups/assets/Pasted image 20250713155320.png",
+    "Projects/Project_Writeups/assets",
+    "Projects/Project_Writeups/README.md",
+    "Projects/Project_Writeups/Proxmox Homelab.md",
+    "Projects/Project_Writeups/Docker.md",
+    "Projects/Project_Writeups",
+    "Projects/Homelab/README.md",
+    "Projects/Homelab/Proxmox Homelab.md",
+    "Projects/Homelab/assets/Pasted image 20250713155320.png",
+    "Projects/Homelab/assets",
+    "Misc Notes/Tools/Rustscan.md",
+    "Misc Notes/Tools",
+    "Cyber Security/Grimoire/Writeups/HTB/Chatterbox.md",
+    "Misc Notes/n0m4d-eng/README.md",
+    "Projects",
+    "Misc Notes/attachments/Pasted image 20250710181103.png",
+    "Misc Notes/Github Readme.md",
+    "Misc Notes/attachments",
+    "Misc Notes/LaTex Resume.md",
+    "Projects/Home Lab",
     "Templates/Concept.md",
-    "Templates/Pentest Template.md",
     "Templates/CTF.md",
-    "Concepts/Active_Directory_and_Windows/AD Enumeration Gameplan.md",
-    "Concepts/Active_Directory_and_Windows/Network Poisoning.md",
-    "Concepts/Active_Directory_and_Windows/Forced Authentication.md",
-    "Concepts/Active_Directory_and_Windows/AD Enumeration.md",
-    "Templates/Code Tabs.md",
-    "Concepts/Footprinting_Services/Linux_Remote_Management.md",
-    "Concepts/Active_Directory_and_Windows/Lateral_Movement/Lateral Movement.md",
-    "Resources/Mindmaps_and_Flowcharts/Homelab_Setup.canvas",
-    "Resources/Pentesting with Docker.md",
-    "Resources/Cheatsheets/Kubernetes.md",
-    "Writeups/HTB/SteamCloud.md",
-    "Untitled",
-    "Resources/Cheatsheets/Nmap.md",
-    "Resources/Cheatsheets/DNSEnum.md",
-    "Resources/Cheatsheets/DIG.md",
-    "Concepts/Host Discovery.md",
-    "README.md",
-    "Concepts/Vulnerability Assessment.md",
-    "Concepts/Pivoting and Port Forwarding.md",
-    "Assets/ligolo-ng mind map.pdf",
-    "Resources/Mindmaps_and_Flowcharts",
-    "Concepts/Active_Directory_and_Windows/Cred_Dumping",
-    "Concepts/Active_Directory_and_Windows/Lateral_Movement",
-    "Assets/spaces_-MFlgUPYI8q83vG2IJpI_uploads_git-blob-726869b6bf07e532c53f9fcd8203f354ce656ffd_Command Injection 1.txt",
-    "Assets/spaces_-MFlgUPYI8q83vG2IJpI_uploads_git-blob-726869b6bf07e532c53f9fcd8203f354ce656ffd_Command Injection.txt",
-    "Concepts/Pivoting_and _Port_Forwarding",
-    "Concepts/Linux/Shells",
-    "Resources/Cheatsheets"
+    "Templates/Pentest Template.md",
+    "Resources/oscp-cpts-notes/SUMMARY.md",
+    "Writeups/HTB/Certified.md",
+    "Writeups/HTB/Cicada.md",
+    "Writeups/HTB/Poison.md",
+    "Writeups/HTB/Servmon.md",
+    "Writeups/HTB/Assets/Pasted image 20250707134455.png",
+    "Writeups/HTB/Assets/Pasted image 20250707134217.png",
+    "Writeups/HTB/Assets/Pasted image 20250707134046.png",
+    "Writeups/HTB/Assets/Pasted image 20250707133740.png",
+    "Writeups/HTB/Assets/Pasted image 20250707133334.png",
+    "Writeups/HTB/Assets/Pasted image 20250707131832.png",
+    "Concepts/Web/File Inclusion/LFI/Log Poisoning.md",
+    "Resources/Mindmaps_and_Flowcharts/Homelab_Setup.canvas"
   ]
 }

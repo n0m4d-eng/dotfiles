@@ -3,7 +3,6 @@
   "table-editor-obsidian",
   "automatic-table-of-contents",
   "formatto-format",
-  "github-sync",
   "obsidian-linter",
   "mermaid-tools",
   "obsidian-mind-map",
@@ -14,5 +13,7 @@
   "code-styler",
   "omnisearch",
   "tag-wrangler",
-  "obsidian-importer"
+  "obsidian-importer",
+  "editor-width-slider",
+  "folder-links"
 ]

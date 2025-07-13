@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiCoffee",
-      "SiHackthebox",
-      "SiGitbook",
-      "LiLayoutTemplate",
-      "SiBookstack"
+      "LiBadgeAlert",
+      "LiWrench",
+      "LiSkull",
+      "SiCodeproject",
+      "LiLayoutTemplate"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,10 +35,17 @@
     "useInternalPlugins": false
   },
   "Assets": "LiFolders",
-  "Concepts": "LiBrain",
   "Resources": "SiBookstack",
   "Templates": "LiLayoutTemplate",
   "Writeups": "SiGitbook",
   "Writeups/HTB": "SiHackthebox",
-  "Writeups/OSCP": "LiCoffee"
+  "Writeups/OSCP": "LiCoffee",
+  "Grimoire": "LiSkull",
+  "Misc Notes": "LiFolders",
+  "Cyber Security": "LiActivity",
+  "Languages": "IbLightBulb",
+  "Projects": "SiCodeproject",
+  "Cyber Security/Grimoire": "LiSkull",
+  "Misc Notes/Tools": "LiWrench",
+  "Misc Notes/n0m4d-eng": "LiBadgeAlert"
 }
