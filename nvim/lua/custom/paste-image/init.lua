@@ -1,6 +1,6 @@
 local M = {}
 
-local function paste_image()
+function M.paste_image()
   -- 1. Get current file path and directory
   local current_file = vim.api.nvim_buf_get_name(0)
   if current_file == "" then
@@ -22,8 +22,11 @@ local function paste_image()
   local file_path = img_dir .. '/' .. file_name
 
   -- 5. Use macOS built-in tool to save clipboard image
-  local cmd = string.format("pngpaste %s", vim.fn.shellescape(file_path))
-  vim.fn.system(cmd)
+  local cmd = string.format("/opt/homebrew/bin/pngpaste %s", vim.fn.shellescape(file_path))
+  local result = vim.fn.system(cmd)
+  if vim.v.shell_error ~= 0 then
+      print("Error: pngpaste failed: " .. result)
+  end
 
   -- 6. Check if file was actually created and insert relative link
   if vim.fn.filereadable(file_path) == 1 and vim.fn.getfsize(file_path) > 0 then
@@ -37,7 +40,7 @@ local function paste_image()
 end
 
 function M.setup()
-  vim.api.nvim_create_user_command('PasteImage', paste_image, {})
+  vim.api.nvim_create_user_command('PasteImage', M.paste_image, {})
 end
 
 return M

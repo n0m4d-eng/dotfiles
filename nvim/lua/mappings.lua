@@ -14,6 +14,6 @@ map("n", "<leader>ta", function()
 end,{desc = "Add tag"})
 
 
-map("n", "<leader>pa", function()
-  require("custom.paste-image").setup()
+map("n", "<leader>p", function()
+  require("custom.paste-image").paste_image()
 end,{desc = "Paste Image"})
