@@ -1,19 +1,20 @@
 #!/bin/bash
 
-read -p "Enter the name of your note: " note_name
+read -p "Enter the project name: " project_name
 
-# Define the parent directory for the new note
-parent_dir="$note_name"
+if [ -z "$project_name" ]; then
+  echo "Project name cannot be empty."
+  exit 1
+fi
 
-# Create the parent directory and the .images directory within it
-mkdir -p "$parent_dir/.images"
+mkdir -p "$project_name"/{recon,exploits,loot,writeup/.images}
+echo "Folder structure created in $project_name"
 
-# Define the template content using a here document
 read -r -d '' template_content <<'EOF'
 ---
 title:
 date started:
-date completed
+date completed:
 platform:
 difficulty:
 os:
@@ -35,28 +36,23 @@ tags:
 # Lessons Learnt
 EOF
 
-# Set the path for the new note file inside the parent directory
-new_file="$parent_dir/$note_name.md"
+new_file="$project_name/writeup/$project_name.md"
 echo "$template_content" > "$new_file"
 
-# Create a temporary file for the keys
 keys_file=$(mktemp)
-# Extract keys from the template's frontmatter
 echo "$template_content" | sed -n '/---/,/---/{/---/d;p;}' | cut -d: -f1 > "$keys_file"
 
 while IFS= read -r key; do
-    # Skip empty lines
     if [ -z "$key" ]; then
         continue
     fi
 
-    # Trim leading/trailing whitespace
     key=$(echo "$key" | awk '{$1=$1};1')
 
     if [ "$key" == "date started" ]; then
         value=$(date +"%Y-%m-%d %H:%M:%S")
         echo "Setting 'date started' to: $value"
-        sed -i '' "s/^$key:.*/$key: $value/" "$new_file"
+        sed -i.bak "s/^$key:.*/$key: $value/" "$new_file" && rm -f "${new_file}.bak"
     elif [ "$key" == "platform" ]; then
         echo "Choose a platform:"
         select platform in "HTB" "Offsec" "TryHackMe" "HackSmarter"; do
@@ -66,15 +62,15 @@ while IFS= read -r key; do
             else
                 echo "Invalid selection. Please try again."
             fi
-        done < /dev/tty # Read from terminal
-        sed -i '' "s/^$key:.*/$key: $value/" "$new_file"
+        done < /dev/tty
+        sed -i.bak "s/^$key:.*/$key: $value/" "$new_file" && rm -f "${new_file}.bak"
     else
-        read -p "Enter value for '$key': " value < /dev/tty # Read from terminal
-        sed -i '' "s/^$key:.*/$key: $value/" "$new_file"
+        read -p "Enter value for '$key': " value < /dev/tty
+        sed -i.bak "s/^$key:.*/$key: $value/" "$new_file" && rm -f "${new_file}.bak"
     fi
 done < "$keys_file"
 
 rm "$keys_file"
 
-echo "Created writeup note at: $new_file"
-echo "Image directory created at: $parent_dir/.images"
+echo "Writeup note created at: $new_file"
+echo "Image directory created at: $project_name/writeup/.images"
