@@ -24,16 +24,6 @@ tags:
 
 # Enumeration
 
-## Ports
-
-```bash
-```
-
-## Services
-
-```bash
-```
-
 # Exploit
 
 # Internal Enumeration

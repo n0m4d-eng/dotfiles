@@ -26,6 +26,7 @@ TARGET_SUBNET=${TARGET_SUBNET:-"N/A"}
 # Set global environment variables in tmux
 tmux set-environment -g TARGET_IP "$TARGET_IP"
 tmux set-environment -g TARGET_SUBNET "$TARGET_SUBNET"
+tmux set-environment -g TARGET "$TARGET_IP"
 
 # Refresh the status bar for all clients
 tmux refresh-client -S
@@ -33,3 +34,4 @@ tmux refresh-client -S
 echo "Tmux Target Updated:"
 echo "  IP:     $TARGET_IP"
 echo "  Subnet: $TARGET_SUBNET"
+echo "  TARGET: $TARGET_IP"
