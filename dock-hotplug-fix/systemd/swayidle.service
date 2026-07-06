@@ -1,0 +1,15 @@
+[Unit]
+Description=Idle manager for niri (lock, screen blank, suspend)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/swayidle -w \
+    timeout 300 'dms ipc call lock lock; niri msg action power-off-monitors' \
+    resume 'niri msg action power-on-monitors' \
+    timeout 600 '[ "$(cat /sys/class/drm/card1-DP-1/status 2>/dev/null)" != connected ] && systemctl suspend' \
+    before-sleep 'dms ipc call lock lock'
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target

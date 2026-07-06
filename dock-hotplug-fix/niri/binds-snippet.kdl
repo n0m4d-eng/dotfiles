@@ -1,0 +1,13 @@
+// Add to ~/.config/niri/config.kdl (or an included file, e.g. dms/binds.kdl)
+
+binds {
+    // Run before unplugging the dock — cleanly disables FEC while the AUX
+    // channel is still live, avoiding the i915 timeout that corrupts DP
+    // port state on disconnect.
+    Mod+F9 hotkey-overlay-title="Disable external monitor before unplugging" { spawn "niri" "msg" "output" "DP-1" "off"; }
+
+    // Manual recovery if the external monitor comes up blank (e.g. after a
+    // hotplug that didn't trigger cleanly, or a suspend/resume with the dock
+    // still attached).
+    Mod+F10 hotkey-overlay-title="Recover external monitor" { spawn "sudo" "/usr/local/bin/monitor-recover.sh"; }
+}
